@@ -15,4 +15,8 @@
     <color name="color_7">#cccc99</color>
     <color name="color_8">#cc9966</color>
     <color name="color_9">#ff99cc</color>
+
+
+    <color name ="ld_Black">#000000</color>
+    <color name ="ld_White">#000000</color>
 </resources>

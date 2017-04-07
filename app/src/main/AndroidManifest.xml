@@ -20,12 +20,14 @@
         <activity android:name="com.hd.palette.ActivityTestPalette" />
         <activity android:name="com.hd.preference.ActivityPreference" />
         <activity android:name="com.hd.rxjavaandretrofit.ActivityRxjavaTest" />
-        <activity android:name="com.hd.recyclerview.ActivityRecyclerViewTest"></activity>
-        <activity android:name="com.hd.navigationview.ActivityNavigationView">
+        <activity android:name="com.hd.recyclerview.ActivityRecyclerViewTest" />
+        <activity android:name="com.hd.navigationview.ActivityNavigationView" />
+        <activity android:name="com.hd.supportlibdemo.SubActivity" />
+        <activity android:name="com.hd.supportlibdemo.ActivitySupportLibDemo"></activity>
+        <activity android:name="com.hd.coordinatorlayout.ActivityCoordinatorLayout">
+
         </activity>
-        <activity android:name="com.hd.supportlibdemo.SubActivity">
-        </activity>
-        <activity android:name="com.hd.supportlibdemo.ActivitySupportLibDemo">
+        <activity android:name="com.hd.waveview.ActivityWave">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
