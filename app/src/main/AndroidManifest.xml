@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hd.studyandtest">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,17 +16,21 @@
             android:name="com.hd.actionbar.ActivityActionBar"
             android:theme="@style/Theme.Design.NoActionBar" />
         <activity android:name="com.hd.cardview.ActivityCardView" />
-        <activity android:name="com.hd.gridlayout.ActivityGridLayout"></activity>
-        <activity android:name="com.hd.palette.ActivityTestPalette">
-
+        <activity android:name="com.hd.gridlayout.ActivityGridLayout" />
+        <activity android:name="com.hd.palette.ActivityTestPalette" />
+        <activity android:name="com.hd.preference.ActivityPreference" />
+        <activity android:name="com.hd.rxjavaandretrofit.ActivityRxjavaTest" />
+        <activity android:name="com.hd.recyclerview.ActivityRecyclerViewTest"></activity>
+        <activity android:name="com.hd.navigationview.ActivityNavigationView">
         </activity>
-        <activity android:name="com.hd.preference.ActivityPreference">
+        <activity android:name="com.hd.supportlibdemo.SubActivity">
+        </activity>
+        <activity android:name="com.hd.supportlibdemo.ActivitySupportLibDemo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
     </application>
 
