@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hd.studyandtest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name="com.hd.actionbar.ActivityActionBar"
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:name="com.hd.cardview.ActivityCardView" />
+        <activity android:name="com.hd.gridlayout.ActivityGridLayout"></activity>
+        <activity android:name="com.hd.palette.ActivityTestPalette">
+
+        </activity>
+        <activity android:name="com.hd.preference.ActivityPreference">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

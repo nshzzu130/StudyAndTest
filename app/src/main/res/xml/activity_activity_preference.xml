@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="wind_pref"
+    android:summary="Display wind employee infomation"
+    android:title="Wind Company employee Preferences" >
+
+    <CheckBoxPreference
+        android:key="show_lijinwei_pref"
+        android:summaryOff="Software enginer"
+        android:summaryOn="软件工程师"
+        android:title="Lijinwei" />
+
+    <CheckBoxPreference
+        android:key="show_chenjiakuan_pref"
+        android:summary="Develop Manager"
+        android:title="Chenjiakuan" />
+
+    <CheckBoxPreference android:key="show_wuguohu_pref"
+        android:summaryOff="Software enginer"
+        android:title="Wuguohu"  />
+</PreferenceScreen>
