@@ -3,16 +3,16 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"><!--can not be match_parent-->
-    <TextView
+    <!--<TextView
         android:id="@+id/custom_btn"
         android:layout_width="match_parent"
         android:gravity="center"
         android:layout_height="30dp"
-        />
+        />-->
     <TextView
         android:id="@+id/custom_text"
         android:layout_width="match_parent"
         android:gravity="center"
-        android:layout_height="30dp"
+        android:layout_height="48dp"
         />
 </LinearLayout>

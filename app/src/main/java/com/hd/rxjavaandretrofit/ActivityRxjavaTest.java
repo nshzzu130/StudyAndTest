@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.hd.studyandtest.R;
 
@@ -83,7 +84,10 @@ public class ActivityRxjavaTest extends AppCompatActivity {
             Log.i("123", "onNext: beanReceive=" + beanReceive);
 
             Log.i("123", "onNext: name=" + beanReceive.getName());
-
+            //Toast.makeText(getApplicationContext(),"onNext: name=" + beanReceive.getName(),Toast.LENGTH_SHORT).show();
+            //_tv_msg
+            //((TextView)findViewById(R.id._tv_msg)).setText("name=" + beanReceive.getName());
+            ((TextView)findViewById(R.id._tv_msg)).setText(beanReceive.toString());
         }
     };
 

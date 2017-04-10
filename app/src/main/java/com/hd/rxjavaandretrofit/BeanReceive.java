@@ -1,5 +1,7 @@
 package com.hd.rxjavaandretrofit;
 
+import com.google.gson.Gson;
+
 import java.util.List;
 
 /**
@@ -57,5 +59,9 @@ public class BeanReceive {
 
     public List<BeanReceive> getChildren() {
         return children;
+    }
+
+    public String toString(){
+        return new Gson().toJson(this);
     }
 }

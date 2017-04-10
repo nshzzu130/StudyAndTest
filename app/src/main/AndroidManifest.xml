@@ -11,28 +11,30 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="com.hd.recyclerview.ActivityRecyclerViewTest" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".MainActivity" />
         <activity
             android:name="com.hd.actionbar.ActivityActionBar"
             android:theme="@style/Theme.Design.NoActionBar" />
         <activity android:name="com.hd.cardview.ActivityCardView" />
         <activity android:name="com.hd.gridlayout.ActivityGridLayout" />
-        <activity android:name="com.hd.palette.ActivityTestPalette" />
+        <activity android:name="com.hd.palette.ActivityTestPalette" >
+        </activity>
         <activity android:name="com.hd.preference.ActivityPreference" />
         <activity android:name="com.hd.rxjavaandretrofit.ActivityRxjavaTest" />
-        <activity android:name="com.hd.recyclerview.ActivityRecyclerViewTest" />
         <activity android:name="com.hd.navigationview.ActivityNavigationView" />
         <activity android:name="com.hd.supportlibdemo.SubActivity" />
         <activity android:name="com.hd.supportlibdemo.ActivitySupportLibDemo"></activity>
         <activity android:name="com.hd.coordinatorlayout.ActivityCoordinatorLayout">
-
         </activity>
         <activity android:name="com.hd.waveview.ActivityWave">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

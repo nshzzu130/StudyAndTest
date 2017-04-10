@@ -43,6 +43,11 @@ public class ActivityWave extends AppCompatActivity {
         //通知view组件重绘
         view.invalidate();
         layout.addView(view);
+    }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        mHandler.removeMessages(0);
     }
 }

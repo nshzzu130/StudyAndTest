@@ -10,10 +10,18 @@
     android:orientation="vertical"
     tools:context="com.hd.palette.ActivityTestPalette">
     <TextView
+        android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:text="testpalette"
 
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:textAllCaps="false"
+        android:text="changepic"
         />
     <ImageView
         android:id="@+id/myimagview_palette"
