@@ -82,7 +82,9 @@ public class ActivityRecyclerViewTest extends AppCompatActivity {
 
         for (ActivityInfo info : activitys) {
             String activityname = info.name;
-            if(activityname.equals("com.hd.supportlibdemo.SubActivity")||activityname.equals("com.hd.studyandtest.MainActivity")){
+            if(activityname.equals("com.hd.supportlibdemo.SubActivity")
+                    ||activityname.equals("com.hd.studyandtest.MainActivity")
+                    ||activityname.equals("com.hd.annotation.ActivityPerson")){
                 continue;
             }
             try {

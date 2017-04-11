@@ -32,8 +32,9 @@
         <activity android:name="com.hd.supportlibdemo.ActivitySupportLibDemo" />
         <activity android:name="com.hd.coordinatorlayout.ActivityCoordinatorLayout" />
         <activity android:name="com.hd.waveview.ActivityWave" />
-        <activity android:name="com.hd.getpackageinfo.ActivityGetPackageInfo"></activity>
-        <activity android:name="com.hd.annotation.ActivityAnnotation"></activity>
+        <activity android:name="com.hd.getpackageinfo.ActivityGetPackageInfo" />
+        <activity android:name="com.hd.annotation.ActivityAnnotation" />
+        <activity android:name="com.hd.annotation.ActivityPerson"></activity>
     </application>
 
 </manifest>
