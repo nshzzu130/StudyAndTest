@@ -26,8 +26,6 @@ public class ActivityNavigationView extends AppCompatActivity {
                 switch (item.getItemId()){
                     case R.id.menu_info_details:
                         break;
-
-
                 }
                 return false;
             }

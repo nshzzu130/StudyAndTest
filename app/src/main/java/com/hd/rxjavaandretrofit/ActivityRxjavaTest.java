@@ -70,7 +70,11 @@ public class ActivityRxjavaTest extends AppCompatActivity {
                 .client(okHttpClient)
                 .build();
 
-        singleton.create(InetworkInterface.class).getData().subscribeOn(Schedulers.newThread()).observeOn(AndroidSchedulers.mainThread()).subscribe(subscribe);
+        singleton.create(InetworkInterface.class)
+                .getData()
+                .subscribeOn(Schedulers.newThread())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(subscribe);
     }
 
     Subscriber subscribe = new Subscriber<BeanReceive>() {

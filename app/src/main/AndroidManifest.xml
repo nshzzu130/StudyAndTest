@@ -34,7 +34,8 @@
         <activity android:name="com.hd.waveview.ActivityWave" />
         <activity android:name="com.hd.getpackageinfo.ActivityGetPackageInfo" />
         <activity android:name="com.hd.annotation.ActivityAnnotation" />
-        <activity android:name="com.hd.annotation.ActivityPerson"></activity>
+        <activity android:name="com.hd.annotation.ActivityPerson" />
+        <activity android:name="com.hd.rxjavaoperator.ActivityRxjavaOperator"></activity>
     </application>
 
 </manifest>

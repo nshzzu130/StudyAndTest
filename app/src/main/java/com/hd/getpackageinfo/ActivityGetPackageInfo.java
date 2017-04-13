@@ -13,7 +13,14 @@ import android.widget.Toast;
 
 import com.hd.studyandtest.R;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
+import rx.Observable;
+import rx.functions.Action1;
+import rx.functions.Func1;
 
 public class ActivityGetPackageInfo extends AppCompatActivity implements View.OnClickListener{
 
@@ -26,7 +33,47 @@ public class ActivityGetPackageInfo extends AppCompatActivity implements View.On
     }
     @Override
     public void onClick(View v) {
-        ArrayList<String> arrayActivities = new ArrayList<String>();
+        PackageManager pm = getPackageManager();
+        Observable.just(pm).map(new Func1<PackageManager, PackageInfo>() {
+            @Override
+            public PackageInfo call(PackageManager packageManager) {
+                try {
+                    return packageManager.getPackageInfo("com.hd.studyandtest", PackageManager.GET_ACTIVITIES);
+                } catch (PackageManager.NameNotFoundException e) {
+                    e.printStackTrace();
+                }
+                return null;
+            }
+        }).map(new Func1<PackageInfo, ActivityInfo[]>() {
+            @Override
+            public ActivityInfo[] call(PackageInfo packageInfo) {
+                return packageInfo.activities;
+            }
+        }).subscribe(new Action1<ActivityInfo[]>() {
+            @Override
+            public void call(ActivityInfo[] activityInfos) {
+                Toast.makeText(ActivityGetPackageInfo.this, Arrays.asList(activityInfos).toString(),Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
+               /* .flatMap(new Func1<PackageInfo, Observable<ActivityInfo>>() {
+            @Override
+            public Observable<ActivityInfo> call(PackageInfo packageInfo) {
+                return Observable.from(packageInfo.activities);
+            }
+        }).subscribe(new Action1<ActivityInfo>() {
+            @Override
+            public void call(ActivityInfo activityInfo) {
+                String activityname=activityInfo.name.substring(activityInfo.name.lastIndexOf(".")+1,activityInfo.name.length());
+                //arrayActivities.add(activityname);
+                Log.v("test", activityname + "------------------");
+                Toast.makeText(ActivityGetPackageInfo.this,"activityname:"+activityname,Toast.LENGTH_SHORT).show();
+            }
+        });
+        Toast.makeText(ActivityGetPackageInfo.this,"end",Toast.LENGTH_SHORT).show();
+*/
+        /*ArrayList<String> arrayActivities = new ArrayList<String>();
         PackageManager pm = getPackageManager();
         PackageInfo packageInfo = null;
         try {
@@ -44,7 +91,7 @@ public class ActivityGetPackageInfo extends AppCompatActivity implements View.On
             arrayActivities.add(activityname);
             Log.v("test", activityname + "------------------");
         }
-        Toast.makeText(this,arrayActivities.toString(),Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,arrayActivities.toString(),Toast.LENGTH_SHORT).show();*/
     }
     /**
      * 获得某个应用程序包的主Activity

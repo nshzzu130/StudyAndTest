@@ -143,7 +143,6 @@ public final class AutoParcelProcessor extends AbstractProcessor {
         List<TypeElement> types = new ImmutableList.Builder<TypeElement>()
                 .addAll(ElementFilter.typesIn(annotatedElements))
                 .build();
-
         for (TypeElement type : types) {
             processType(type);
         }
