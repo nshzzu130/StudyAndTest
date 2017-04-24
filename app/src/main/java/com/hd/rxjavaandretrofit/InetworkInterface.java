@@ -1,6 +1,5 @@
 package com.hd.rxjavaandretrofit;
 
-import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import rx.Observable;
 
@@ -10,5 +9,6 @@ import rx.Observable;
 public interface InetworkInterface {
     @GET("study/json.php")
     Observable<BeanReceive>getData();
-
+    @GET("study/plugin.php")
+    Observable<BeanPlugin>getPlugins();
 }
