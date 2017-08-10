@@ -2,13 +2,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.hd.studyandtest">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:sharedUserId="android.uid.system"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.hd.recyclerview.ActivityRecyclerViewTest">
@@ -36,7 +44,12 @@
         <activity android:name="com.hd.annotation.ActivityAnnotation" />
         <activity android:name="com.hd.annotation.ActivityPerson" />
         <activity android:name="com.hd.rxjavaoperator.ActivityRxjavaOperator" />
-        <activity android:name="com.hd.jdbc.ActivityJDBC"></activity>
+        <activity android:name="com.hd.jdbc.ActivityJDBC" />
+        <activity android:name="com.hd.animator.ActivityAnimator" />
+        <activity android:name="com.hd.webview.ActivityWebview" />
+        <activity android:name="com.hd.imei.ActivityImei" />
+        <activity android:name="com.hd.svg.ActivitySvg" />
+        <activity android:name="com.hd.svgpathview.ActivitySvgPathView"></activity>
     </application>
 
 </manifest>

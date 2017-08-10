@@ -1,0 +1,55 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="60dp"
+    android:height="60dp"
+    android:viewportHeight="256"
+    android:viewportWidth="256">
+    <group
+        android:scaleX="4.0"
+        android:scaleY="4.0"
+        >
+        <path
+            android:name="star"
+            android:fillColor="#22e171"
+            android:pathData="M 48,54 L 31,42 15,54 21,35 6,23 25,23 32,4 40,23 58,23 42,35 z"
+            android:strokeColor="#ff0000"
+            android:strokeWidth="1"/>
+    </group>
+</vector>
+<!--<vector xmlns:android="http://schemas.android.com/apk/res/android"  //命名空间-->
+    <!--android:height="200dp"  //这个是图片的intrinsic高度-->
+    <!--android:width="200dp"   //这个是图片的intrinsic宽度-->
+    <!--android:viewportHeight="100"    //这个是为这个图片设置的纵坐标,表示将图片分为100等份,主要下面的pathData需要依赖这个坐标的划分-->
+    <!--android:viewportWidth="100"     //同上,只不过这个是横坐标,这两个值可以随便定-->
+    <!--android:alpha="0.2"     //这个是整个图像的透明度,取值范围0到1-->
+    <!--&gt;-->
+
+<!--<group      //这个标签中可以放入若干个<path/>标签,并给它们设置一些共同的属性-->
+    <!--android:name="group_name"   //这个name很有用,在设置objectAnimator的时候用来区分给那个部分施加动画-->
+    <!--android:pivotY="50"     //这个设置这个group的中心点的X坐标,取值范围为0到100,在做rotation时有用-->
+    <!--android:pivotX="50"     //这个设置这个group的中心点的Y坐标,取值范围为0到100,在做rotation时有用-->
+    <!--android:translateX="20" //将整个group在X轴方向平移多少像素-->
+    <!--android:translateY="30" //将整个group在Y轴方向平移多少像素-->
+    <!--android:rotation="90"   //将整个group以中心点左边旋转的角度,360为一圈-->
+    <!--android:scaleX="0.5"    //横坐标的缩放比例 , 取值1表示100%-->
+    <!--android:scaleY="0.3">   //纵坐标的缩放比例,取值0.5表示50%,取值1.5表示150%-->
+
+<!--<path   //这个标签是重头戏,矢量图绘制的路径-->
+    <!--android:name="path_name"    //为这个path标记的名字,在使用objectAnimator的时候用来区分给哪个部分施加动画-->
+
+    <!--android:pathData="m 0,0 L50,0 L100,100 L0,100 z"    //这个具体语法,在网上随便搜搜就有了,就是SVG的语法,如果这个都不明白,那么你肯定不明白什么是矢量图,找点资料再看看吧,这篇文章不适合你-->
+
+    <!--android:fillColor="@color/red"  //图形内部的夜色-->
+    <!--android:fillAlpha="1"       //图形的透明度取值范围0到1-->
+    <!--android:strokeAlpha="0.5"   //线条的透明度,取值范围0到1-->
+    <!--android:strokeColor="#ff0000ff" //线条的颜色-->
+    <!--android:strokeLineCap="butt|round|square"   //线的末端形状,butt严格到指定的坐标就截至,round圆角的先端边缘,square方形的边缘不过有点向外延伸-->
+    <!--android:strokeLineJoin="round|bevel|miter"  //线的连接处形状,round是圆角的,bevel和miter貌似看不出来有什么区别....-->
+    <!--android:strokeWidth="20"    //线段的宽度-->
+
+    <!--android:trimPathStart="0.5"    //顾名思义,从path开始的地方(0%)去除path,去除到指定的百分比位置,取值范围0到1-->
+    <!--android:trimPathEnd="0.5"      //顾名思义,从path结束的地方(100%的地方)去除path,去除到指定的百分比位置,取值范围0到1-->
+    <!--android:trimPathOffset="0.5"   //这个属性是和上面两个属性共同使用的,单独使用没有用,这个属性的意思是,在去除path的时候设置path原点的位置,按百分比设置,取值范围0到1-->
+    <!--/>-->
+    <!--</group>-->
+
+    <!--</vector>-->
